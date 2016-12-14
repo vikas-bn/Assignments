@@ -17,8 +17,7 @@
     width:2px;
     height: 90px;
     background:white;
-    transform: rotate(90deg);
-    transform-origin: bottom;
+    
 }
 .needle--hour
 {
@@ -47,69 +46,68 @@
     left:97px;
     background: lightgray;
 }
-.visible
+.clock__numbers--visible
 {
     width:6px;
     height:15px;
     position: absolute;
     top:0px;
     background: black;
-}
-.number--12
+}.clock__numbers__number--12
 {
-    
+
 }
-.number--1
+.clock__numbers__number--1
 {   
     transform: rotate(30deg);
     transform-origin: bottom;
 }
-.number--2
+.clock__numbers__number--2
 {    
     transform: rotate(60deg);
     transform-origin: bottom;
 }
-.number--3
+.clock__numbers__number--3
 {   
     transform: rotate(90deg);
     transform-origin: bottom;
 }
-.number--4
+.clock__numbers__number--4
 {
       transform: rotate(120deg);
     transform-origin: bottom;
 }
-.number--5
+.clock__numbers__number--5
 {   
     transform: rotate(150deg);
     transform-origin: bottom;
 }
-.number--6
+.clock__numbers__number--6
 {    
     transform: rotate(180deg);
     transform-origin: bottom;
 }
-.number--7
+.clock__numbers__number--7
 {   
     transform: rotate(210deg);
     transform-origin: bottom;
 }
-.number--8
+.clock__numbers__number--8
 {
        transform: rotate(240deg);
     transform-origin: bottom;
 }
-.number--9
+.clock__numbers__number--9
 {   
     transform: rotate(270deg);
     transform-origin: bottom;
 }
-.number--10
+.clock__numbers__number--10
 {    
     transform: rotate(300deg);
     transform-origin: bottom;
 }
-.number--11
+.clock__numbers__number--11
 {   
     transform: rotate(330deg);
     transform-origin: bottom;

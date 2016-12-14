@@ -1,0 +1,27 @@
+
+.flex--box{
+    display: flex; 
+    background: red;
+    width:500px;
+    flex-wrap: nowrap;
+    overflow: auto;
+    justify-content: space-around;
+       
+}
+.flex--element
+{
+    width:100px;
+    height: 100px;
+    background: blue;
+    flex-shrink: 0;
+margin: 10px;
+    flex-grow:1;
+}
+.flex--box:after
+{
+   content:"";
+    width: 10px;
+    flex-shrink: 0;
+   
+}
+

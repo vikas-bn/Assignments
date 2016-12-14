@@ -7,36 +7,24 @@ var audio5 = new Audio("/home/vikasbn/Downloads/sounds/openhat.wav");
 var audio6 = new Audio("/home/vikasbn/Downloads/sounds/ride.wav");
 var audio7 = new Audio("/home/vikasbn/Downloads/sounds/tink.wav");
 
+audio_array=[audio1,audio2,audio3,audio4,audio5,audio6,audio7];
 function playaudio(event){
 	var input = event.which;
+    var curaudio=input-97;    
     audio.pause();
-    audio.currentTime=0
-    document.getElementById(input+"").style.transform="scale(1.2,1.2)"; 
-    document.getElementById(input+"").style.backgroundColor="#90b350";  
-    switch(input){
-        case 97: audio=audio1;                 
-                 break;
-        case 98: audio=audio2;                 
-                 break;
-        case 99: audio=audio3;                 
-                 break;
-        case 100: audio=audio4;                 
-                  break;
-        case 101: audio=audio5;                 
-                  break;
-        case 102: audio=audio6;                 
-                break;
-        case 103: audio=audio7;                 
-                  break;
-        default:audio=new Audi();
-	}
-    
+    audio.currentTime=0;
+//    document.getElementById(input+"").style.transform="scale(1.2,1.2)"; 
+//    document.getElementById(input+"").style.backgroundColor="#90b350";
+   
+    document.getElementById(input+"").classList.add("active");
+    audio=audio_array[curaudio];
     audio.play();
+    
     setTimeout(removestyle(input), 250);
     function removestyle(input){
        return function(){
-        document.getElementById(input+"").style.transform="scale(1,1)";
-        document.getElementById(input+"").style.backgroundColor="#0041b2";  
+        if(document.getElementById(input+"").classList.contains("active"))
+           document.getElementById(input+"").classList.remove("active"); 
        }
     }
      

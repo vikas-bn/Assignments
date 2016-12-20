@@ -2,7 +2,7 @@
 .flex--box{
     display: flex; 
     background: red;
-    width:500px;
+    width:1200px;
     flex-wrap: nowrap;
     overflow: auto;
     justify-content: space-around;
@@ -14,7 +14,7 @@
     height: 100px;
     background: blue;
     flex-shrink: 0;
-margin: 10px;
+    margin: 10px;
     flex-grow:1;
 }
 .flex--box:after

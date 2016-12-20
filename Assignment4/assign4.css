@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
+/* CSS reset begins */
+*{ padding:0px;
+margin:0px;
+font-family: sans-serif;
+
+}
+/*CSS reset ends*/
+
+/*General classes starts*/
+
+.fleft{float: left;}
+.fright{float: right;}
+.bold{font-weight: 800}
+.clearfix::after{content:'';
+display:block;
+clear:both;
+}
+/*General classes sends*/
+
+/*body class starts  */
+body
+{
+ font-weight: 400;
+box-sizing: border-box;
+    
+
+}
+/*body class ends  */
+
+/*aside classes start*/
+
+.aside
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+   min-height: 670px;
+    width: 250px;
+    background: url(images/10.png);
+    background-color: #303030;
+
+
+}
+
+.aside__logo
+{
+    display: block;
+    margin-top: 50px;
+    
+}
+.aside__logo > img{
+    display: block;
+    margin: auto;
+}
+.aside__nav
+{
+    margin-left: 50px;
+    margin-top: 50px;
+
+
+}
+.aside__nav__list
+{
+    list-style-type: none;
+}
+.aside__nav__anchor
+{
+    margin:3px 0px;
+	padding: 2px 8px;
+	text-decoration: none;
+	color: white;
+    font-size:14px;
+	display:inline-block;
+	font-family: "Dosis";
+    font-weight: 200;
+
+}
+.aside__nav__element > .active ,.aside__nav__anchor:hover
+{background-color:black;
+    border-radius: 5px;
+}
+.aside__nav__list > .active--static
+{
+background-image: url(images/bg_menu_act.gif);
+ background-position: right;
+    background-repeat: no-repeat;
+}
+.aside__footer
+{
+  position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    text-align: center;
+  font-size: 8px;
+}
+.aside__footer__content
+{
+    
+    color: white;
+   
+}
+.aside__footer__content__rightdata
+{
+    color: #90803c;
+
+}
+/*aside classes end*/
+
+
+/*section classes start*/
+.section
+{
+     background: url(images/bg_main.png);
+    position: absolute;
+    top:0px;
+    left:250px;
+    min-height: 670px;
+    width: calc(100% - 250px);
+    min-width: 1050px;
+   color: #2c2d2c;
+}
+.section__content
+{
+  width: 750px;
+    padding-left: 50px;
+
+}
+
+.section__title{
+    margin-top: 150px;
+font-family: "Dosis";
+    font-size: 80px;
+    font-weight: 300;
+
+
+
+}
+.section__paragraph1{
+
+
+    font-size: 30px;
+    color: #515052;
+font-weight: 100;
+font-family: "Dosis";
+}
+.section__quote
+{
+    font-family: "Roboto Slab";
+    color:#2d2d2d;
+    margin:10px 0px;
+    font-size: 25px;
+    font-weight: 600;
+   padding:10px 0px;
+    border-top: 3px solid #d9b31e;
+      border-bottom: 3px solid #d9b31e;
+
+}
+.section__paragraph2
+{
+    color: #454440;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 20px;
+}
+
+/*section classes end*/

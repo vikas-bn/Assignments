@@ -18,16 +18,18 @@ clear:both;
 /*General classes sends*/
 
 /*body class starts  */
-html{ width: 100%;
-    height: 100%;
+
+html{  height: 100%;
+    width: 100%;
+    
 }
 body{
 	
     font-size: 14px;
 	color: white;
 	font-weight: 400;
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 /*body class ends  */
 
@@ -37,40 +39,58 @@ body{
     height: 100%;
     width: 100%;
     align-items: center;
-    background:url(../images/bg.png);
+    min-width: 1280px;
+    min-height: 650px;
+     background:url(../images/bg.png);
     background-size: 100% 100%;
-    
+    background-repeat: no-repeat;
 }
 
 /*flexbox class ends*/
 
+/*content class starts*/
+.content{
+    
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    
+}
+/*content class ends*/
+
 /*header class starts*/
 .header{
+    
+    padding:10px;
     align-self: flex-start;
-    margin-left: 3vw;
-    margin-top:3vh;
+    margin-left: 10px;
 }
 .header__title{
+    display:block;
     font-size:45px;
     font-family: monospace;
 }
 
 /*header class ends*/
-.section{
-    margin-left:28vw;
-}
+
 /*section class starts*/
+.section
+{
+    margin-left: 300px;
+}
 .section__form__userid,.section__form__password
 {
     display: block;
     margin: 20px 0px;
-    width:23vw;
-    height:9vh;
+    width: 300px;
+    height: 40px;
     font-size: 20px;
     font-weight: 100;
     padding-left: 5px;
-/*   border:3px solid #db3030;*/
     border-radius: 5px; 
+    border: none;
     
     
 }
@@ -91,8 +111,8 @@ input:focus
 {
     display: block;
     background-color: #9b3638;
-     width:23vw;
-    height:9vh;
+    width:300px;
+    height:40px;
     font-size:20px;
     text-align: center;
     color:#efefef;
@@ -107,7 +127,7 @@ input:focus
 
 
 .section__login__alert{
-    display:block;
+    display:none;
     width: 300px;
     text-align: center;
     font-size: 16px;

@@ -163,20 +163,7 @@ input:focus
     font-size:14px;
    
 }
-.form__password--icon,.form__username--icon{
-    display: block;
-    height:15px;
-    width: 15px; 
-    float:left;
-    
-}
-.form__alert--icon{
-    display:inline-block;
-    height:12px;
-    width: 12px; 
-/*    float:left;*/
-    
-}
+
 .section__form__username__placeholder__text,.section__form__password__placeholder__text{
     
     margin-left:5px;
@@ -211,12 +198,12 @@ input:focus
  
 }
 
-.section__login__alert.flaticon-alert-icon:before{
+.section__login__alert.flaticon-alert:before{
     font-size: 12px;
     margin-left: 14px;
 }
-.section__form__password__placeholder.flaticon-password-icon:before { font-size: 14px;  margin-left: 13px;}
-.section__form__username__placeholder.flaticon-user-icon:before{font-size: 14px; margin-left: 13px;}
+.section__form__password__placeholder.flaticon-password:before { font-size: 14px;  margin-left: 13px;}
+.section__form__username__placeholder.flaticon-user:before{font-size: 14px; margin-left: 13px;}
 
 @media only screen and (max-width:768px) {
     .layout__container{ 

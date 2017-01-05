@@ -161,18 +161,19 @@ body {
     font-weight: 600;
     border:1px solid transparent;
 }
-.header__secondary-header__list__element:hover{
+.header__secondary-header__list__element:hover,.header__secondary-header__list__element.active{
     border: 1px solid #d7d7d7;
     border-radius: 5px 5px 0px 0px;
     border-bottom: none;
     background: #fff;
     color:#3b9ace;
 }
-.header__secondary-header__list__element__text,.header__secondary-header__list__element.active{
+.header__secondary-header__list__element__text{
     display: inline-block;
     padding:2px;
     max-width:150px;
 }
+
 
 /*header classes ends*/
 .section{
@@ -364,11 +365,11 @@ body {
     content:'';
     display: block;
     width: 5px;
-    height:42px;
     background:#3397c9;
     position: absolute;
-    top:-1px;
+    top:0px;
     left:-5px;
+    bottom: 0px;
     z-index: 1;
 }
 .section__nav__list__element__content.active:after{

@@ -1,0 +1,102 @@
+
+/* CSS reset begins */
+*{ padding:0px;
+margin:0px;
+font-weight:400;
+box-sizing: border-box;
+}
+/*CSS reset ends*/
+
+/*General classes starts*/
+
+.fleft{float: left;}
+.fright{float: right;}
+.bold{font-weight: 800}
+.clearfix::after{content:'';
+display:block;
+clear:both;}
+.section-separator{border-bottom:3px solid #26b4b9;}
+
+/*General classes end*/
+
+/*header starts*/
+.header{border-bottom:3px solid #26b4b9;}
+.header__title{color:#184f67;
+	font-size:35px;
+	padding-bottom: 15px;
+}
+
+/*header ends*/
+
+/*body starts*/
+
+body{
+background-color: #dce6ee;
+padding-bottom: 20px;
+ font-family: sans-serif;
+ color:#777777;
+} 
+
+.page-wrapper{
+	width:1000px;
+	background-color:white;
+	margin:auto;
+	padding:40px;
+	padding-bottom: 20px;
+	
+}
+
+
+
+/*body ends*/
+
+/*banner starts*/
+.banner__image{display:block;
+width:calc(100% - 60px);
+margin:auto;
+padding:30px 0px;
+
+}
+/*banner ends*/
+
+/*content starts*/
+.section
+{
+	padding-bottom: 40px;
+}
+.content__title{
+	text-decoration:underline;
+	color:#404040; 
+	padding:20px 0px;
+}
+.content__list{list-style-position: outside;
+	margin:0px;
+	padding:20px;
+	list-style-type: disc;
+	font-size:20px ;
+	line-height: 30px;
+}
+
+.content__paragraph
+{	font-size:20px ;
+	text-align: justify;
+    line-height: 30px;
+}
+.content__image{float:left;
+	display:block;
+	padding:15px;
+	padding-left:0px;
+	padding-right:25px;
+	width:50%;
+	
+}
+
+.content__list__item{padding-left: 20px}
+
+
+/*content ends*/
+/*footer starts*/
+.footer{font-size:20px ;padding-top:20px;}
+.footer__link{color:#737373;}
+.footer__copy{color:#717171;}
+/*footer ends*/

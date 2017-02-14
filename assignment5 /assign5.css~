@@ -1,0 +1,513 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* CSS reset begins */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+/*CSS reset ends*/
+
+
+/*General classes starts*/
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.bold {
+    font-weight: 800
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a,button{
+    cursor: pointer;
+}
+
+.height-100per {
+    height: 100%;
+}
+
+
+/*General classes sends*/
+
+
+/*body class starts  */
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+
+/*body class ends  */
+
+
+/*header classes starts*/
+
+.header {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 180px;
+}
+
+.primary__header {
+    height: 50px;
+    background-image: url(Images/hdr-navi.jpg);
+}
+
+.primary__header__button {
+    display: block;
+    height: 33px;
+    width: 43px;
+    border: none;
+    position: absolute;
+    top: 7px;
+   
+}
+
+.dashboard--button {
+    background-image: url(Images/dashboard-btn.png);
+    left: 15px;
+}
+
+.plus--button {
+    background-image: url(Images/plus-btn.png);
+    right: 15px;
+}
+
+.header__nav {
+    display: block;
+    list-style-type: none;
+    height: 50px;
+    width: 420px;
+    margin: auto;
+}
+
+.header__nav a {
+    display: block;
+    height: 50px;
+    width: 70px;
+}
+
+.details {
+    background: url(Images/tab-navi.png) -8px 0px;
+}
+
+.tasks {
+    background: url(Images/tab-navi.png) -88px 0px;
+}
+
+.hazards {
+    background: url(Images/tab-navi.png) -165px 0px;
+}
+
+.controls {
+    background: url(Images/tab-navi.png) -240px 0px;
+}
+
+.history {
+    background: url(Images/tab-navi.png) -318px 0px;
+}
+
+.help {
+    background: url(Images/tab-navi.png) -395px 0px;
+}
+
+.secondary__header {
+    background: white;
+    height: 130px;
+}
+
+.header__logo {
+    display: block;
+    height: 95px;
+    width: 65px;
+    background: url(Images/at_t-logo.jpg) -15px -10px;
+    margin: 15px 40px 15px 0px;
+}
+
+.secondary__header__text {
+    color: #585755;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.secondary__header__primary--title {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.secondary__header__secondary--title {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.secondary__header__table {
+    width: 530px;
+    height: 45px;
+    margin-top: 7px;
+    border: 1px solid #bdbbbc;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+.secondary__header__table td {
+    padding: 5px;
+    border: 1px solid #dbbbbc;
+}
+
+
+/*
+.secondary__header__table td:last-child{
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.secondary__header__table td:first-child{
+    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+*/
+
+.secondary__header__table__data--heading {
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.secondary__header__table__data--heading.notbold {
+    font-weight: 400;
+}
+
+.secondary__header__table__data--value {
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 5px;
+    color: #bdbbbc;
+}
+
+
+/*
+
+header classes ends
+*/
+
+.section {
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    right: 0px;
+    bottom: 49px;
+}
+
+.section__header {
+    height: 40px;
+    background: url(Images/main-hdr-bg.jpg);
+}
+
+.section__title {
+    display: block;
+    width: 60px;
+    height: 36px;
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #efefef;
+    margin: auto;
+    text-align: center;
+}
+
+.section__header__button {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background: #0192ca;
+    border-style: none;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    text-align: center;
+    border-radius: 5px;
+   
+}
+
+.section__button__text {
+    display: block;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.section__button__plus {
+    font-size: 14px;
+}
+
+.layout__wrapper.section__content__list__wrapper {
+    height: calc(100% - 40px);
+}
+
+.section__content__list {
+    display: block;
+    background: white;
+    height: 100%;
+    overflow: auto;
+    width: 770px;
+    margin: auto;
+    list-style-type: none;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+}
+
+.section__content__task--data {
+    border-bottom: 1px solid #dbdbdb;
+    height: 150px;
+}
+
+
+/*
+.section__content:last-child{
+    border: none;
+}
+*/
+
+.section__content__task--data:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+
+
+.section__content__image {
+    display: block;
+    height: 125px;
+    width: 125px;
+    margin-top: 10px;
+    border: 1px solid #dbdbdb;
+    margin-left: 15px;
+}
+
+.section__content__text {
+    width: calc(100% - 390px);
+    color: #535353;
+    display: block;
+    margin: 15px 0px 13px 15px;
+}
+
+.section__content__text__heading {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.section__content__text__paragraph {
+    font-size: 14px;
+    max-height: 65px;
+    line-height: 22px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.section__content__text__attachment {
+    display: inline-block;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    height: 25px;
+    width: 45px;
+    margin-top: 4px;
+    padding: 3px;
+}
+
+.section__content__attachment__number {
+    display: block;
+    margin-top: 2px;
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.section__content__attachment__image {
+    margin-left: 3px;
+}
+
+.section__content__parameters {
+    width: 130px;
+    height: 110px;
+    margin: 17px 0 20px 0;
+    margin-left: 35px;
+}
+
+.section__content__parameters__severity {
+  
+    height: 35px;
+    margin-top: 7px;
+    width: 129px;
+}
+
+.section__content__severity__table {
+    height: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    
+  
+}
+
+.section__content__severity__table__data {
+    width: calc(100% / 3);
+    display: block;
+    float: left;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 2px;
+    height: 100%;
+    border-right: 1px solid white;
+    font-weight: 800;
+}
+
+.novalue {
+    display: none;
+}
+
+.section__content__severity__title,
+.section__content__hazard__title {
+    color: #585755;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 10px;
+}
+
+.section__content__severity--low {
+    background: url(Images/green-color.jpg);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.section__content__severity--medium {
+    background: url(Images/orange-color.jpg);
+}
+
+.section__content__severity--high {
+    background: #f94141;
+    border-radius: 0px 15px 15px 0px;
+    border:none;
+}
+
+.section__content__parameters__hazard {
+    width: 130px;
+    height: 70px;
+}
+
+.section__content__hazard__table {
+    width: 130px;
+    height: 55px;
+    border: 1px solid #dbdbdb;
+    border-collapse: collapse;
+}
+
+.section__content__hazard__table td {
+    border: 1px solid #dbdbdb;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.active {
+    background: url(Images/icon-item.png);
+    color: #8f8f8f;
+    background-repeat: no-repeat;
+}
+
+.deactive {
+    background: url(Images/icon-deactive.png);
+    color: #dddddd;
+    background-repeat: no-repeat;
+}
+
+.section__content__hazard__table__cell1 {
+    background-position: 5px 2px;
+}
+
+.section__content__hazard__table__cell2 {
+    background-position: -58px 3px;
+}
+
+.section__content__hazard__table__cell3 {
+    background-position: -125px 3px;
+}
+
+.section__content__hazard__table__cell4 {
+    background-position: 5px -23px;
+}
+
+.section__content__hazard__table__cell5 {
+    background-position: -58px -22px;
+}
+
+.section__content__hazard__table__cell6 {
+    background-position: -127px -23px;
+}
+
+.section__content__arrow {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-top: 60px;
+}
+
+.footer {
+    position: fixed;
+    height: 50px;
+    border-top: 2px solid #dbdbdb;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    background: white;
+}
+
+.layout__wrapper {
+    width: 770px;
+    margin: auto;
+    position: relative;
+}
+
+.footer__image {
+    height: 50px;
+    width: 209px;
+    background: url(Images/poweredby-remedy-interactive.jpg);
+}
+
+.footer__button {
+    height: 33px;
+    width: 260px;
+    padding: 5px;
+    background: #0096cb;
+    border-style: none;
+    background-size: cover;
+    margin: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 12px;
+   
+}

@@ -1,0 +1,45 @@
+var points = [{x: 1, y: 1 }, {x: -1, y: 1 }, {x: -1, y: -1 }, {x: 1, y: -1 }, {x: 2, y: 2 }, {x: -1, y: 2 }, {x: -1, y: -2 }, {x: 1, y: -2 }, {x: 1, y: 6 }, {x: -1, y: 4 }, {x: -3, y: -1 }, {x: 1, y: -1 }, {x: 10, y: 1 }, {x: -1, y: 11 }, {x: -1, y: -1 }, {x: 1, y: -1 } ]
+var quad1=[],quad2=[],quad3=[],quad4=[];
+var j1=0,j2=0,j3=0,j4=0;
+for(var i=0;i<points.length;i++)
+ {
+   if(points[i].x*1>0 && points[i].y*1>0 ){
+     quad1[j1]=points[i];
+     j1++;
+   }
+   
+  else if(points[i].x*1>0 && points[i].y*-1>0 ){
+     quad2[j2]=points[i];
+     j2++;
+   }
+    
+  else if(points[i].x*-1>0 && points[i].y*-1>0 ){
+     quad3[j3]=points[i];
+     j3++;
+   }
+    else {
+     quad4[j4]=points[i];
+     j4++;
+   }
+ }
+var vector1=maxvector(quad1);
+var vector2=maxvector(quad2);
+var vector3=maxvector(quad3);
+var vector4=maxvector(quad4);
+console.log(vector1);
+console.log(vector2);
+console.log(vector3);
+console.log(vector4);
+function maxvector(quad){
+  var maxmag=0,vector;
+  for(var i=0;i<quad.length;i++){
+       var magnitude=Math.sqrt(quad[i].x**2+quad[i].y**2);
+      if(magnitude>maxmag){
+        maxmag=magnitude;
+        vector=quad[i];
+      }
+    
+  }
+  return vector;
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>assign6</title>
+    <link rel="stylesheet" href="stylesheets/assign6.css"> </head>
+    <script type="text/javascript" src="scripts/assign6.js"></script>
+<body>
+    <div class="layout__container">
+        <div class="download__permission__container" id="download__container" onclick="downOk(event)">
+            <div class="download__permission" id="download__box" onclick="downOk(event)" > <span class="download__permission__text" >Are you sure you want to download?</span>
+                <button class="download__permission__button" onclick="downOk(event)">Okay!</button>
+            </div>
+        </div>
+        <table class="table__download-link">
+            <tr>
+                <th>FileName</th>
+                <th>Download Link</th>
+            </tr>
+            <tr>
+                <td>Sublime</td>
+                <td><a tooltip-data="23mb" href=""  class="tooltip--top" onhover="display__tooltip()"
+                 onclick="down(event)" >Download</a></td>
+            </tr>
+            <tr>
+                <td>Photoshop</td>
+                <td><a tooltip-data="46mb" href="" onclick="down(event)" class="tooltip--bottom">Download</a></td>
+            </tr>
+            <tr>
+                <td>Illustrator</td>
+                <td><a tooltip-data="43mb" href=""  onclick="down(event)" class="tooltip--left">Download</a></td>
+            </tr>
+            <tr>
+                <td>WebMaster</td>
+                <td><a tooltip-data="13mb" href=""  onclick="down(event)" class="tooltip--top">Download</a></td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td><a tooltip-data="33mb" href=""  onclick="down(event)" class="tooltip--bottom">Download</a></td>
+            </tr>
+            <tr>
+                <td>Magento</td>
+                <td><a tooltip-data="23mb" href=""  onclick="down(event)" class="tooltip--left">Download</a></td>
+            </tr>
+            <tr>
+                <td>AbanteCart</td>
+                <td><a tooltip-data="73mb" href=""  onclick="down(event)">Download</a></td>
+            </tr>
+        </table>
+    </div>
+<!--
+    <script type="text/javascript">
+        
+         
+              window.down = function(event){
+                event && event.preventDefault();
+               event && event.stopPropagation();
+            document.getElementById("download__container").style.display="flex";
+            }
+        
+    </script>
+-->
+</body>
+
+</html>

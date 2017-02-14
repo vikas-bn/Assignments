@@ -1,0 +1,43 @@
+/* CSS reset begins */
+*{ padding:0px;
+margin:0px;
+font-family: sans-serif;
+box-sizing: border-box;
+}
+/*CSS reset ends*/
+
+/*General classes starts*/
+
+.fleft{float: left;}
+.fright{float: right;}
+.bold{font-weight: 800}
+.clearfix::after{content:'';
+display:block;
+clear:both;
+}
+/*General classes sends*/
+html{
+    height: 100%;
+    width: 100%;
+}
+
+/*body class starts  */
+body
+{
+	font-size: 14px;
+	color: white;
+    width: 100%;
+    height:100%;
+	font-weight: 400; 
+     background: url("/home/vikasbn/assignments_repo/Assignments/project_static_pages/images/rztbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*body class ends  */
+
+.flex-container
+{
+    display:flex;
+    width: 100%;
+    height: 100vh;
+}

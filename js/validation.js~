@@ -1,0 +1,67 @@
+
+var list = [
+  {
+    "id": 1,
+    "status": 1,
+    "inputs": [
+      5,
+      ""
+    ],
+    "outputs": [
+      ""
+    ]
+  },
+  {
+    "id": "",
+    "status": 2,
+    "inputs": [
+      "test",
+      ""
+    ],
+    "outputs": [
+      ""
+    ]
+  },
+  {
+    "id": "",
+    "status": 3,
+    "inputs": [
+   
+    ],
+    "outputs": [
+      ""
+    ]
+  },
+  {
+    "id": "",
+    "status": 4,
+    "inputs": [
+          "",""
+    ],
+    "outputs": [
+      ""
+    ]
+  }
+];
+
+var opList=list.filter((item)=>{
+  
+  if(item.inputs.length==0){
+        return false;
+  }
+  else{
+    var nonEmptyElements = item.inputs.filter((input)=>{
+      																					if(typeof input === "number")
+      																					return input.toString();
+                                                 return input.length>0;
+                                            });
+    if(nonEmptyElements.length>0)
+      return true;
+    else
+      return false;
+   }
+  
+});
+
+for(var i=0;i<opList.length;i++)
+  console.log(opList[i]);
